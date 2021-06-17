@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.my-nav {
+  transition: 0.5s;
+  background-color: transparent;
+}
+.my-nav.scrolling {
+  background-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.my-nav.scrolling a,
+.my-nav.scrolling .website,
+.my-nav.scrolling .address {
+  color: black;
+}
+.my-nav.scrolling .hamburger-menu span {
+  background-color: black !important;
+}
+.my-nav.scrolling .container {
+  padding: 0.5rem;
+}
+.my-nav,
+.my-nav a {
+  color: white;
+}
+.my-nav .container {
+  transition: 1s;
+  padding: 1.5rem;
+}
+.my-nav .logo a {
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.my-nav .logo a img {
+  width: 50px;
+  height: 50px;
+}
+.my-nav .logo a .hamburger-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.my-nav .logo a .hamburger-menu span {
+  background-color: white;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  transition: 0.5s;
+}
+.my-nav .logo a .hamburger-menu.show-menu span:nth-child(1) {
+  width: 75%;
+  transform: rotate(45deg) translate(10px, -5.5px);
+}
+.my-nav .logo a .hamburger-menu.show-menu span:nth-child(3) {
+  width: 75%;
+  transform: rotate(-45deg) translate(10px, 5.5px);
+}
+.my-nav .address,
+.my-nav .website {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.my-nav .column-menu {
+  background-color: transparent;
+}
+.my-nav .column-menu ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-nav .column-menu ul.menu a.link-menu {
+  font-weight: 500;
+  text-decoration: none;
+}
+.my-nav .column-menu .use-sub-menu {
+  position: relative;
+}
+.my-nav .column-menu .use-sub-menu .list-sub-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel .carousel-item img {
+  height: 100vmin;
+}
+.carousel .sapaan {
+  position: absolute;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  color: white;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  font-size: calc(1vmin + 15px);
+}
+.carousel .sapaan span {
+  font-weight: bold;
+  font-size: calc(1vmin + 18px);
+}
+.carousel::after {
+  z-index: 2;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+@media (max-width: 767px) {
+  .my-nav .logo a {
+    margin-top: 0px !important;
+    justify-content: space-between !important;
+  }
+  .my-nav .logo a .hamburger-menu {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .my-nav .logo a {
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

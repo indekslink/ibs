@@ -1,0 +1,9 @@
+@use 'dekstop';
+@use 'tablet';
+@use 'mobile';
+@use 'custom-breakpoints';
+
+@use 'fonts';
+* {
+  font-family: fonts.$montserrat;
+}
