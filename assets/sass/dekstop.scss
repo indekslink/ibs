@@ -1,51 +1,52 @@
 @use 'fonts';
+@use 'mixins';
 .my-nav {
+  transition: background-color 1s ease;
+  background-color: transparent;
   &.scrolling {
-    a,
-    .website,
-    .address {
-      color: black;
+    .container {
+      padding: 1rem 0.5rem;
+      a {
+        color: black;
+      }
     }
 
+    @include mixins.bgTransparentWhite;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     .hamburger-menu span {
       background-color: black !important;
     }
-    background-color: rgba(255, 255, 255, 0.96);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-    .container {
-      padding: 0.5rem;
-    }
-  }
-  transition: 0.5s;
-  &,
-  a {
-    color: white;
   }
   .container {
-    transition: 1s;
-    padding: 1.5rem;
-  }
-
-  background-color: transparent;
-  .logo a {
-    text-decoration: none;
+    flex-wrap: wrap;
     display: flex;
-    height: 100%;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 800;
-    img {
-      width: 50px;
-      height: 50px;
+    padding: 1.5rem;
+    transition: 1s ease;
+    a {
+      text-decoration: none;
+      color: white;
     }
-
+    .logo {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 800;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
     .hamburger-menu {
       display: none;
       width: 30px;
       height: 30px;
+      cursor: pointer;
       flex-direction: column;
       justify-content: space-around;
       span {
@@ -54,31 +55,29 @@
         display: block;
         width: 100%;
         height: 3px;
-        transition: 0.5s;
+        transition: 1s;
       }
       &.show-menu {
         span:nth-child(1) {
           width: 75%;
-          transform: rotate(45deg) translate(10px, -5.5px);
+          transform: rotate(45deg) translate(2px, 0px);
+        }
+        span:nth-child(2) {
+          transform: rotate(-90deg) translateY(-10px);
         }
         span:nth-child(3) {
           width: 75%;
-          transform: rotate(-45deg) translate(10px, 5.5px);
+          transform: rotate(-45deg) translate(3px, -23px);
         }
       }
     }
-  }
-  .address,
-  .website {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-  }
-  .column-menu {
-    background-color: transparent;
+
     ul.menu {
+      width: 90vmin;
       margin: 0;
       padding: 0;
+      font-size: 15px;
+      font-family: fonts.$lato !important;
       list-style-type: none;
       display: flex;
       justify-content: space-between;
@@ -86,14 +85,6 @@
       a.link-menu {
         font-weight: 500;
         text-decoration: none;
-      }
-    }
-
-    .use-sub-menu {
-      position: relative;
-      .list-sub-menu {
-        position: absolute;
-        opacity: 0;
       }
     }
   }
@@ -131,5 +122,27 @@
       rgba(0, 0, 0, 0.8),
       transparent
     );
+  }
+}
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

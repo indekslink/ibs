@@ -1,9 +1,30 @@
+@use 'mixins';
 @media (max-width: 767px) {
-  .my-nav .logo a {
-    margin-top: 0px !important;
-    justify-content: space-between !important;
-    .hamburger-menu {
-      display: flex;
+  // .my-nav .logo a {
+  //   margin-top: 0px !important;
+  //   justify-content: space-between !important;
+  //   .hamburger-menu {
+  //     display: flex;
+  //   }
+  // }
+  .hamburger-menu {
+    display: flex !important;
+  }
+  ul.menu {
+    transition: 0.5s ease;
+    opacity: 0;
+    justify-content: space-around !important;
+    &.show-menu {
+      opacity: 1;
+      height: 80vmin;
+    }
+    width: 100% !important;
+    flex-direction: column;
+    height: 0;
+
+    overflow: hidden;
+    a {
+      color: black !important;
     }
   }
 }

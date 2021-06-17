@@ -4,6 +4,6 @@
 @use 'custom-breakpoints';
 
 @use 'fonts';
-* {
+body {
   font-family: fonts.$montserrat;
 }
