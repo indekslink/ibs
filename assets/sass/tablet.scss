@@ -7,6 +7,15 @@
   //     display: flex;
   //   }
   // }
+  #home {
+    height: 100vh;
+    background-image: url(../image/slider/slider-4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-position-x: -280px;
+    /* background-position-y: -0px; */
+  }
   .hamburger-menu {
     display: flex !important;
   }
@@ -16,7 +25,7 @@
     justify-content: space-around !important;
     &.show-menu {
       opacity: 1;
-      height: 80vmin;
+      height: 60vh;
     }
     width: 100% !important;
     flex-direction: column;

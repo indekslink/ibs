@@ -6,3 +6,8 @@
   background-color: #f6f9fc;
   border-radius: 10px;
 }
+
+@mixin textBorder($color: white) {
+  text-shadow: -1px 1px 0 $color, 1px 1px 0 $color, 1px -1px 0 $color,
+    -1px -1px 0 $color;
+}

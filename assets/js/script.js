@@ -48,24 +48,27 @@ clickMenu.forEach((m) => {
 
     const elementId = m.getAttribute("href");
     const goToElement = document.querySelector(elementId);
+
+    const inMobile =
+      window.innerWidth > 768
+        ? navbar.offsetHeight - 20
+        : navbar.offsetHeight - menus.offsetHeight - 20;
+    console.log(inMobile);
     if (goToElement) {
-      window.scrollTo(
-        0,
-        goToElement.offsetTop - (navbar.offsetHeight - menus.offsetHeight)
-      );
+      window.scrollTo(0, goToElement.offsetTop - inMobile);
     }
   });
 });
 
 // for profile content
-const contentsProfile = Array.from(
-  document.querySelector("section#profile .container").children[1].children
-);
-contentsProfile.forEach((el, i) => {
-  if ((i + 1) % 2 == 0) {
-    el.children[0].classList.add("align-items-end");
-  }
-});
+// const contentsProfile = Array.from(
+//   document.querySelector("section#profile .container").children[1].children
+// );
+// contentsProfile.forEach((el, i) => {
+//   if ((i + 1) % 2 == 0) {
+//     el.children[0].classList.add("align-items-end");
+//   }
+// });
 
 // read more and read less
 const linkReadMore = document.querySelectorAll(".read-text");
