@@ -29,3 +29,32 @@ toggle.addEventListener("click", function () {
   menus.classList.toggle("show-menu");
   menus.classList.add("fade-in");
 });
+
+let clickMenu = Array.from(document.querySelectorAll("ul.menu a.link-menu"));
+const menuHomeInLogo = document.querySelector(".logo a");
+clickMenu.push(menuHomeInLogo);
+
+clickMenu.forEach((m) => {
+  m.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const elementId = m.getAttribute("href");
+    const goToElement = document.querySelector(elementId);
+    if (goToElement) {
+      window.scrollTo(
+        0,
+        goToElement.offsetTop - (navbar.offsetHeight - menus.offsetHeight)
+      );
+    }
+  });
+});
+
+// for profile content
+const contentsProfile = Array.from(
+  document.querySelector("section#profile .container").children[1].children
+);
+contentsProfile.forEach((el, i) => {
+  if ((i + 1) % 2 == 0) {
+    el.children[0].classList.add("align-items-end");
+  }
+});
