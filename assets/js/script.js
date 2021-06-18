@@ -4,7 +4,15 @@ const menus = document.querySelector(".my-nav ul.menu");
 
 const toggle = document.querySelector(".hamburger-menu");
 
+const modalReadMore = new bootstrap.Modal(
+  document.getElementById("modalReadMore"),
+  {
+    backdrop: "static",
+  }
+);
+
 let currentScroll = 0;
+
 window.onscroll = function () {
   let scroll = window.scrollY;
 
@@ -57,4 +65,25 @@ contentsProfile.forEach((el, i) => {
   if ((i + 1) % 2 == 0) {
     el.children[0].classList.add("align-items-end");
   }
+});
+
+// read more and read less
+const linkReadMore = document.querySelectorAll(".read-text");
+linkReadMore.forEach((link) => {
+  link.addEventListener("click", function () {
+    // mendapatkan text more dari link read more yang diklik
+    const textTitle = link.getAttribute("data-title");
+    const textMore = document.querySelector(
+      link.getAttribute("data-target")
+    ).innerHTML;
+    document.querySelector("#modalReadMore .modal-title").innerHTML = textTitle;
+    document.querySelector("#modalReadMore .modal-body").innerHTML = textMore;
+    modalReadMore.show();
+  });
+});
+
+var myModalEl = document.getElementById("modalReadMore");
+myModalEl.addEventListener("hidden.bs.modal", function () {
+  document.querySelector("#modalReadMore .modal-title").innerHTML = null;
+  document.querySelector("#modalReadMore .modal-body").innerHTML = null;
 });

@@ -184,6 +184,9 @@ section#profile .sub-title-profil {
 section#profile .text {
   text-align: justify;
 }
+section#profile .text-hidden {
+  display: none;
+}
 
 @media (max-width: 767px) {
   .hamburger-menu {
