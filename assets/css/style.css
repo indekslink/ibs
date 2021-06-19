@@ -116,13 +116,13 @@
   background-color: white !important;
 }
 
-.carousel {
+#home.carousel {
   position: relative;
 }
-.carousel .carousel-item img {
+#home.carousel .carousel-item img {
   height: 100vmin;
 }
-.carousel .sapaan {
+#home.carousel .sapaan {
   pointer-events: none;
   right: 0;
   /* display: none; */
@@ -144,12 +144,12 @@
   /* transform: translate(-50%, -50%); */
   font-size: calc(3vw + 8px);
 }
-.carousel .sapaan span {
+#home.carousel .sapaan span {
   font-weight: bold;
   text-align: center;
   font-size: calc(3vw + 20px);
 }
-.carousel::after {
+#home.carousel::after {
   z-index: 2;
   pointer-events: none;
   content: "";
@@ -247,7 +247,7 @@ section#legalitas .container .card .card-title {
   font-size: 20px;
 }
 section#legalitas .container .card .card-body .number {
-  font-size: 15px;
+  font-size: 14px;
   color: gray;
 }
 section#legalitas .container .card .card-footer {
@@ -274,6 +274,17 @@ section#legalitas::after {
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+}
+section#market-plan .text-market-plan .number span {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#market-plan .text-market-plan .isi-text p {
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {

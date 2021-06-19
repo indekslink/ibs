@@ -20,7 +20,7 @@ window.onscroll = function () {
   // for navbar
   navbar.style.height = containerNavbar.offsetHeight;
   if (!toggle.classList.contains("show-menu")) {
-    navbar.classList.toggle("scrolling", scroll > 10);
+    navbar.classList.toggle("scrolling", scroll > 5);
   }
 };
 // setInterval(() => {
@@ -51,11 +51,11 @@ clickMenu.forEach((m) => {
 
     const inMobile =
       window.innerWidth > 768
-        ? navbar.offsetHeight - 20
+        ? navbar.offsetHeight
         : navbar.offsetHeight - menus.offsetHeight - 20;
     console.log(inMobile);
     if (goToElement) {
-      window.scrollTo(0, goToElement.offsetTop - inMobile);
+      window.scrollTo(0, goToElement.offsetTop - 60);
     }
   });
 });
@@ -89,4 +89,9 @@ var myModalEl = document.getElementById("modalReadMore");
 myModalEl.addEventListener("hidden.bs.modal", function () {
   document.querySelector("#modalReadMore .modal-title").innerHTML = null;
   document.querySelector("#modalReadMore .modal-body").innerHTML = null;
+});
+
+const sliderMarketPlan = document.getElementById("carouselExampleCaptions");
+const carouselBsMarketPlan = new bootstrap.Carousel(sliderMarketPlan, {
+  wrap: false,
 });

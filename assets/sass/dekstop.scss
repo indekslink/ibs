@@ -120,7 +120,7 @@
     }
   }
 }
-.carousel {
+#home.carousel {
   position: relative;
   .carousel-item img {
     height: 100vmin;
@@ -254,7 +254,7 @@ section {
         }
         .card-body {
           .number {
-            font-size: 15px;
+            font-size: 14px;
             color: gray;
           }
         }
@@ -284,6 +284,24 @@ section {
       background-attachment: fixed;
       background-color: rgba(0, 0, 0, 0.5);
       pointer-events: none;
+    }
+  }
+
+  &#market-plan {
+    .text-market-plan {
+      .number span {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .isi-text {
+        p {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
