@@ -1,19 +1,13 @@
 @use 'mixins';
 @media (max-width: 767px) {
-  // .my-nav .logo a {
-  //   margin-top: 0px !important;
-  //   justify-content: space-between !important;
-  //   .hamburger-menu {
-  //     display: flex;
-  //   }
-  // }
+ 
   #home {
     height: 100vh;
     background-image: url(../image/slider/slider-4.jpg);
     background-size: cover;
     background-attachment: fixed;
     /* background-position: center; */
-    background-position-x: -280px;
+    background-position-x: 25%;
     /* background-position-y: -0px; */
   }
   .hamburger-menu {

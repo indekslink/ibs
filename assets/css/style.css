@@ -214,12 +214,66 @@ section#profile .text {
 section#profile .text-hidden {
   display: none;
 }
-section#profile .visi-misi .card-title {
-  font-size: 2rem;
+section#profile .card-title {
+  font-size: 1.5rem;
   color: #198754;
 }
-section#profile .visi-misi .card-text {
+section#profile .card-text {
   font-size: 14px;
+}
+section#legalitas {
+  background-image: url(../image/bg-legalitas.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+section#legalitas,
+section#legalitas .container {
+  position: relative;
+}
+section#legalitas .container {
+  z-index: 2;
+}
+section#legalitas .container .title-section {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.8);
+}
+section#legalitas .container .card {
+  text-transform: uppercase;
+  color: black;
+}
+section#legalitas .container .card .card-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+section#legalitas .container .card .card-body .number {
+  font-size: 15px;
+  color: gray;
+}
+section#legalitas .container .card .card-footer {
+  text-transform: none;
+  font-size: 14px;
+}
+section#legalitas .container .card .card-footer .text {
+  margin-bottom: 10px;
+}
+section#legalitas .container .card .card-footer a {
+  text-decoration: none;
+}
+section#legalitas .container .card .card-footer a i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+section#legalitas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
 @media (max-width: 767px) {
@@ -229,7 +283,7 @@ section#profile .visi-misi .card-text {
     background-size: cover;
     background-attachment: fixed;
     /* background-position: center; */
-    background-position-x: -280px;
+    background-position-x: 25%;
     /* background-position-y: -0px; */
   }
 
