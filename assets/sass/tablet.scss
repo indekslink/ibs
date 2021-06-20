@@ -1,15 +1,5 @@
 @use 'mixins';
 @media (max-width: 767px) {
- 
-  #home {
-    height: 100vh;
-    background-image: url(../image/slider/slider-4.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    /* background-position: center; */
-    background-position-x: 25%;
-    /* background-position-y: -0px; */
-  }
   .hamburger-menu {
     display: flex !important;
   }

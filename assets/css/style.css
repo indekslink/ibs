@@ -9,7 +9,7 @@
   background-color: rgba(255, 255, 255, 0.97);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
-.my-nav.scrolling li:not(.use-sub-menu) a::after {
+.my-nav.scrolling li:not(.use-sub-menu) a:not(.dropdown-item)::after {
   background-color: #198754 !important;
 }
 .my-nav.scrolling .container {
@@ -82,10 +82,13 @@
   justify-content: space-between;
   align-items: center;
 }
+.my-nav .container ul.menu li.use-sub-menu {
+  margin-top: -3px;
+}
 .my-nav .container ul.menu li:not(.use-sub-menu) {
   position: relative;
 }
-.my-nav .container ul.menu li:not(.use-sub-menu) a::after {
+.my-nav .container ul.menu li:not(.use-sub-menu) a:not(.dropdown-item)::after {
   content: "";
   opacity: 0;
   transition: all 0.3s ease;
@@ -96,16 +99,13 @@
   height: 3px;
   border-radius: 5px;
 }
-.my-nav .container ul.menu li:not(.use-sub-menu) a.dropdown-item::after {
-  background-color: #198754 !important;
-}
 .my-nav .container ul.menu li:not(.use-sub-menu):hover a::after {
   opacity: 1;
   width: 100%;
 }
 .my-nav .container ul.menu a {
   font-family: "Open Sans", sans-serif !important;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   text-decoration: none;
 }
@@ -120,7 +120,7 @@
   position: relative;
 }
 #home.carousel .carousel-item img {
-  height: 100vmin;
+  height: 100vh;
 }
 #home.carousel .sapaan {
   pointer-events: none;
@@ -185,9 +185,13 @@
     opacity: 0;
   }
 }
+.waves {
+  background-color: rgba(25, 135, 84, 0.3);
+  overflow: hidden;
+}
+
 section {
-  padding: 1.5rem 0;
-  margin: 3rem 0;
+  overflow: hidden;
 }
 section .text-desc {
   font-size: 14px;
@@ -199,10 +203,19 @@ section .read-text {
 section .read-text::before {
   content: "...";
 }
-section .title-section {
+section span.title-section {
   font-family: "Open Sans", sans-serif;
   font-size: calc(5vmin + 15px);
   font-weight: 500;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  border-left: 5px solid #198754;
+}
+section .row-with-image .column-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section#profile .sub-title-profil {
   font-size: 20px;
@@ -222,22 +235,8 @@ section#profile .card-title {
 section#profile .card-text {
   font-size: 14px;
 }
-section#legalitas {
-  background-image: url(../image/bg-legalitas.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-}
-section#legalitas,
-section#legalitas .container {
-  position: relative;
-}
-section#legalitas .container {
-  z-index: 2;
-}
-section#legalitas .container .title-section {
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.8);
+section#legalitas .row .card {
+  height: 100% !important;
 }
 section#legalitas .container .card {
   text-transform: uppercase;
@@ -265,17 +264,6 @@ section#legalitas .container .card .card-footer a i {
   font-size: 25px;
   margin-right: 10px;
 }
-section#legalitas::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  bottom: 0;
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-}
 section#market-plan .text-market-plan .number span {
   width: 30px;
   height: 30px;
@@ -289,16 +277,6 @@ section#market-plan .text-market-plan .isi-text p {
 }
 
 @media (max-width: 767px) {
-  #home {
-    height: 100vh;
-    background-image: url(../image/slider/slider-4.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    /* background-position: center; */
-    background-position-x: 25%;
-    /* background-position-y: -0px; */
-  }
-
   .hamburger-menu {
     display: flex !important;
   }
@@ -318,6 +296,21 @@ section#market-plan .text-market-plan .isi-text p {
   }
   ul.menu a {
     color: black !important;
+  }
+}
+@media (max-width: 569px) {
+  #legalitas .row {
+    overflow-y: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+  }
+  #legalitas .row::-webkit-scrollbar {
+    display: none;
+  }
+  #legalitas .row {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 }
 body {

@@ -1,11 +1,12 @@
 @use 'fonts';
 @use 'mixins';
+@use 'variabel';
 .my-nav {
   transition: background-color 0.5s ease;
   background-color: transparent;
   &.scrolling {
-    li:not(.use-sub-menu) a::after {
-      background-color: #198754 !important;
+    li:not(.use-sub-menu) a:not(.dropdown-item)::after {
+      background-color: variabel.$green !important;
     }
     .container {
       padding: 1rem 0.5rem;
@@ -83,10 +84,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      li.use-sub-menu {
+        margin-top: -3px;
+      }
       li:not(.use-sub-menu) {
         position: relative;
 
-        & a::after {
+        & a:not(.dropdown-item)::after {
           content: "";
           opacity: 0;
           transition: all 0.3s ease;
@@ -97,9 +101,7 @@
           height: 3px;
           border-radius: 5px;
         }
-        a.dropdown-item::after {
-          background-color: #198754 !important;
-        }
+
         &:hover a::after {
           opacity: 1;
           width: 100%;
@@ -107,7 +109,7 @@
       }
       a {
         font-family: fonts.$openSans !important;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 500;
         text-decoration: none;
       }
@@ -123,7 +125,7 @@
 #home.carousel {
   position: relative;
   .carousel-item img {
-    height: 100vmin;
+    height: 100vh;
   }
   .sapaan {
     pointer-events: none;
@@ -190,12 +192,18 @@
     opacity: 0;
   }
 }
+.waves {
+  background-color: rgba(25, 135, 84, 0.3);
+  overflow: hidden;
+}
 
 section {
+  overflow: hidden;
   .text-desc {
     font-size: 14px;
     text-align: justify;
   }
+
   .read-text {
     &::before {
       content: "...";
@@ -203,12 +211,23 @@ section {
 
     cursor: pointer;
   }
-  padding: 1.5rem 0;
-  margin: 3rem 0;
-  .title-section {
+
+  span.title-section {
     font-family: fonts.$openSans;
     font-size: calc(5vmin + 15px);
     font-weight: 500;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 3px; //kiri-atas kanan-atas kanan-bawah kiri-bawah
+
+    border-left: 5px solid variabel.$green;
+  }
+  .row-with-image {
+    .column-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &#profile {
     .sub-title-profil {
@@ -225,27 +244,17 @@ section {
 
     .card-title {
       font-size: 1.5rem;
-      color: #198754;
+      color: variabel.$green;
     }
     .card-text {
       font-size: 14px;
     }
   }
   &#legalitas {
-    background-image: url(../image/bg-legalitas.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: white;
-    &,
-    .container {
-      position: relative;
+    .row .card {
+      height: 100% !important;
     }
     .container {
-      z-index: 2;
-      .title-section {
-        text-shadow: 3px 3px rgba(0, 0, 0, 0.8);
-      }
       .card {
         text-transform: uppercase;
         color: black;
@@ -275,18 +284,63 @@ section {
         }
       }
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      bottom: 0;
-      background-attachment: fixed;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-    }
   }
+  // &#legalitas {
+  //   background-image: url(../image/bg-legalitas.jpeg);
+  //   background-size: cover;
+  //   background-attachment: fixed;
+  //   background-position: center;
+  //   color: white;
+  //   &,
+  //   .container {
+  //     position: relative;
+  //   }
+  //   .container {
+  //     z-index: 2;
+  //     .title-section {
+  //       text-shadow: 3px 3px rgba(0, 0, 0, 0.8);
+  //     }
+  //     .card {
+  //       text-transform: uppercase;
+  //       color: black;
+  //       .card-title {
+  //         font-weight: bold;
+  //         font-size: 20px;
+  //       }
+  //       .card-body {
+  //         .number {
+  //           font-size: 14px;
+  //           color: gray;
+  //         }
+  //       }
+  //       .card-footer {
+  //         text-transform: none;
+  //         font-size: 14px;
+  //         .text {
+  //           margin-bottom: 10px;
+  //         }
+  //         a {
+  //           text-decoration: none;
+  //           i {
+  //             font-size: 25px;
+  //             margin-right: 10px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     bottom: 0;
+  //     background-attachment: fixed;
+  //     background-color: rgba(0, 0, 0, 0.5);
+  //     pointer-events: none;
+  //   }
+  // }
 
   &#market-plan {
     .text-market-plan {
