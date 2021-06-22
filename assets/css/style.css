@@ -190,10 +190,16 @@
   overflow: hidden;
 }
 
+.card-title.use-global {
+  font-weight: 500;
+  font-size: 15px;
+}
+
 section {
   overflow: hidden;
 }
 section .text-desc {
+  padding-top: 1rem;
   font-size: 14px;
   text-align: justify;
 }
@@ -203,14 +209,18 @@ section .read-text {
 section .read-text::before {
   content: "...";
 }
-section span.title-section {
-  font-family: "Open Sans", sans-serif;
-  font-size: calc(5vmin + 15px);
+section .title-section {
+  font-size: 30px;
+  padding-bottom: 2rem;
   font-weight: 500;
-  padding: 10px;
-  background-color: #f5f5f5;
-  border-radius: 3px;
-  border-left: 5px solid #198754;
+  font-family: "Open Sans", sans-serif;
+  color: #198754;
+}
+section span.title-section-2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 10px;
+  border-left: 4px solid #198754;
 }
 section .row-with-image .column-image {
   display: flex;
@@ -240,29 +250,44 @@ section#legalitas .row .card {
 }
 section#legalitas .container .card {
   text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: black;
 }
 section#legalitas .container .card .card-title {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 15px;
 }
 section#legalitas .container .card .card-body .number {
   font-size: 14px;
   color: gray;
 }
-section#legalitas .container .card .card-footer {
+section#legalitas .container .card .card-body .file-pendukung {
   text-transform: none;
-  font-size: 14px;
+  font-size: 12px;
 }
-section#legalitas .container .card .card-footer .text {
-  margin-bottom: 10px;
+section#legalitas .container .card .card-body .file-pendukung .text {
+  color: gray;
+  margin: 10px 0;
 }
-section#legalitas .container .card .card-footer a {
+section#legalitas .container .card .card-body .file-pendukung a {
   text-decoration: none;
 }
-section#legalitas .container .card .card-footer a i {
+section#legalitas .container .card .card-body .file-pendukung a i {
   font-size: 25px;
   margin-right: 10px;
+}
+section#produk .nav-pills .nav-link.active,
+section#produk .nav-pills .show > .nav-link {
+  background-color: #198754 !important;
+  font-weight: 500;
+  color: white;
+}
+section#produk .nav-link {
+  font-size: 15px;
+  color: black;
+}
+section#produk .row .card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 section#market-plan .text-market-plan .number span {
   width: 30px;
@@ -299,6 +324,20 @@ section#market-plan .text-market-plan .isi-text p {
   }
 }
 @media (max-width: 569px) {
+  .hidden-scrollable {
+    overflow-y: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+  }
+  .hidden-scrollable::-webkit-scrollbar {
+    display: none;
+  }
+  .hidden-scrollable {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
   #legalitas .row {
     overflow-y: scroll;
     /* Hide scrollbar for IE, Edge and Firefox */

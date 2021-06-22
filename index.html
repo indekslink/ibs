@@ -87,8 +87,28 @@
           <li class="list-menu">
             <a href="#gallery" class="link-menu">Gallery</a>
           </li>
-          <li class="list-menu">
-            <a href="#testimoni" class="link-menu">Testimoni</a>
+          <li class="list-menu use-sub-menu">
+            <a
+              href="#testimoni"
+              class="link-menu dropdown-toggle"
+              id="testimoni"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Testimoni</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="sub-menu-profil">
+              <li>
+                <a class="dropdown-item text-dark" href="#manfaat-produk"
+                  >Manfaat Produk</a
+                >
+              </li>
+
+              <li>
+                <a class="dropdown-item text-dark" href="#sukses-leader"
+                  >Sukses Leader</a
+                >
+              </li>
+            </ul>
           </li>
           <li class="list-menu">
             <a href="#register" class="link-menu">Register</a>
@@ -99,7 +119,7 @@
         </ul>
       </div>
     </div>
-    <div id="home" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -164,15 +184,68 @@
         <span>IBS PT. INDONESIA BERSATU SEJAHTERA</span>
       </div>
     </div>
-    <section class="py-4" id="profile">
+    <section class="py-4">
       <div class="container">
-        <div class="row gy-3 justify-content-center row-with-image">
-          <div class="col-md-9 col-lg-7">
-            <div class="text-md-center text-left">
-              <span class="title-section">Company Profile</span>
+        <div class="row">
+          <div class="col-12">
+            <div class="title-section text-md-center text-left">About Us</div>
+          </div>
+        </div>
+        <div
+          class="
+            row
+            gy-3
+            flex-column-reverse flex-md-row
+            justify-content-center
+            row-with-image
+          "
+        >
+          <div class="col-md-5 col-lg-6" id="visions">
+            <div>
+              <span class="title-section-2">Visions</span>
             </div>
 
-            <div class="text-desc pt-4">
+            <div class="text-desc">
+              <p>
+                Bersatu menjadi perusahaan industri penjualan langsung yang kuat
+                untuk mengangkat perekonomian masyrakat.
+              </p>
+              <p>
+                PT. Indonesia Bersatu Sejahtera Internasional selalu berusaha
+                mengedepankan kebutuhan anggotanya dalam inovasi dan
+                pengembangan produk.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-6" id="missions">
+            <div>
+              <span class="title-section-2">Missions</span>
+            </div>
+            <div class="text-desc">
+              <p>
+                Membentuk komunitas yang bermartabat dan mandiri dalam
+                menerapkan nilai-nilai kemanusiaan dimulai dari diri sendiri
+                kemudian ke lingkungan sekitar dengan tekat untuk membangun diri
+                sendiri untuk membangun sesama PT. Indonesia Bersatu Sejahtera
+                Internasional telah berpengalaman di bidang inovasi dan
+                pengembangan produk di bawah sistem penjualan langsung di
+                Indonesia.
+              </p>
+              <p>
+                Dalam menjalankan misinya, PT. Indonesia Bersatu Sejahtera
+                Internasional selalu mengedepankan kebutuhan anggota. Dalam
+                artian kami akan menerapkan nilai kemanusiaan sesuai dengan
+                kebutuhan anggota dan sesama. Dan dengan tetap mempertimbangkan
+                proses bisnis yang sesuai melalui edukasi.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-9 col-lg-7" id="profile">
+            <div class="text-md-center text-left">
+              <span class="title-section-2">Company Profile</span>
+            </div>
+
+            <div class="text-desc">
               <p>
                 PT. Indonesia Bersatu Sejahtera Internasional telah berdiri pada
                 tanggal 27 Mei 2019 dengan tujuan awal menjadi perusahaan yang
@@ -199,88 +272,84 @@
         </div>
       </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#198754"
-        fill-opacity="0.3"
-        d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,160C672,171,768,245,864,250.7C960,256,1056,192,1152,170.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-      ></path>
-    </svg>
-    <div class="visi-dan-misi waves">
-      <div class="container">
-        <div class="row gx-5 justify-content-center">
-          <div class="col-md-6 col-lg-5 col-xxl-4">
-            <section class="py-4" id="visions">
-              <div class="text-left text-md-center">
-                <span class="title-section">Visions</span>
-              </div>
-
-              <div class="text-desc pt-4">
-                <p>
-                  Bersatu menjadi perusahaan industri penjualan langsung yang
-                  kuat untuk mengangkat perekonomian masyrakat.
-                </p>
-                <p>
-                  PT. Indonesia Bersatu Sejahtera Internasional selalu berusaha
-                  mengedepankan kebutuhan anggotanya dalam inovasi dan
-                  pengembangan produk.
-                </p>
-              </div>
-            </section>
-          </div>
-          <div class="col-md-6 col-lg-5 col-xxl-4">
-            <section class="py-4" id="missions">
-              <div class="text-left text-md-center">
-                <span class="title-section">Missions</span>
-              </div>
-              <div class="text-desc pt-4">
-                <p>
-                  Membentuk komunitas yang bermartabat dan mandiri dalam
-                  menerapkan nilai-nilai kemanusiaan dimulai dari diri sendiri
-                  kemudian ke lingkungan sekitar dengan tekat untuk membangun
-                  diri sendiri untuk membangun sesama PT. Indonesia Bersatu
-                  Sejahtera Internasional telah berpengalaman di bidang inovasi
-                  dan pengembangan produk di bawah sistem penjualan langsung di
-                  Indonesia.
-                </p>
-                <p>
-                  Dalam menjalankan misinya, PT. Indonesia Bersatu Sejahtera
-                  Internasional selalu mengedepankan kebutuhan anggota. Dalam
-                  artian kami akan menerapkan nilai kemanusiaan sesuai dengan
-                  kebutuhan anggota dan sesama. Dan dengan tetap
-                  mempertimbangkan proses bisnis yang sesuai melalui edukasi.
-                </p>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#198754"
-        fill-opacity="0.3"
-        d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,160C672,171,768,245,864,250.7C960,256,1056,192,1152,170.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg>
 
     <section class="py-4" id="legalitas">
       <div class="container">
-        <div class="text-md-center text-left">
-          <span class="title-section">Our Legality</span>
+        <div>
+          <span class="title-section-2">Our Legality</span>
         </div>
         <div class="row flex-nowrap flex-sm-wrap g-4 pt-4">
+          <div class="col-11 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  surat izin usaha perdagangan langsung (siupl)
+                </div>
+                <div class="card-body p-0">
+                  <div class="number">No. : 10/SIPT/SIUPL/01/2021</div>
+                  <div class="file-pendukung">
+                    <div class="text">&mdash; File Pendukung :</div>
+                    <div class="file">
+                      <a href="./assets/files/file-izin-usaha-1.pdf" download
+                        ><i class="far fa-file-pdf text-danger"></i>
+                      </a>
+                      <a href="./assets/files/file-izin-usaha-2.pdf" download
+                        ><i class="far fa-file-pdf text-danger"></i>
+                      </a>
+                      <a href="./assets/files/file-izin-usaha-3.pdf" download
+                        ><i class="far fa-file-pdf text-danger"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-11 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  surat izin usaha perdagangan (siup)
+                </div>
+                <div class="card-body p-0">
+                  <div class="number">NIB : 9120109572377</div>
+                  <div class="file-pendukung">
+                    <div class="text">&mdash; File Pendukung :</div>
+                    <div class="file">
+                      <a href="./assets/files/file-nib.pdf" download
+                        ><i class="far fa-file-pdf text-danger"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-11 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">verifikasi ap2li</div>
+                <div class="card-body p-0">
+                  <div class="number">No. 125/AP2LI/VER/XII/2020</div>
+                  <div class="file-pendukung">
+                    <div class="text">&mdash; File Pendukung :</div>
+                    <div class="file">
+                      <a href="./assets/files/file-verifikasi.pdf" download
+                        ><i class="far fa-file-pdf text-danger"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-11 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
             <div class="card">
               <div class="card-body">
                 <div class="card-title">NOMOR POKOK WAJIB PAJAK (NPWP)</div>
                 <div class="card-body p-0">
                   <div class="number">91.638.584.2-602.000</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="text">
-                  this legality does not have detailed information
                 </div>
               </div>
             </div>
@@ -296,11 +365,6 @@
                   </div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="text">
-                  this legality does not have detailed information
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-11 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
@@ -311,81 +375,334 @@
                   <div class="number">NOMOR AHU-0026692.AH.01.01.TAHUN2019</div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="text">
-                  this legality does not have detailed information
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-11 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="card-title">
-                  surat izin usaha perdagangan (siup)
-                </div>
-                <div class="card-body p-0">
-                  <div class="number">NIB : 9120109572377</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="text">
-                  here's a file on the details information of this legality
-                </div>
-                <a href="./assets/files/file-nib.pdf" download
-                  ><i class="far fa-file-pdf text-danger"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-11 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="card-title">verifikasi ap2li</div>
-                <div class="card-body p-0">
-                  <div class="number">No. 125/AP2LI/VER/XII/2020</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="text">
-                  here's a file on the details information of this legality
-                </div>
-                <a href="./assets/files/file-verifikasi.pdf" download
-                  ><i class="far fa-file-pdf text-danger"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-11 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="card-title">
-                  surat izin usaha perdagangan langsung (siupl)
-                </div>
-                <div class="card-body p-0">
-                  <div class="number">No. : 10/SIPT/SIUPL/01/2021</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="text">
-                  here's a file on the details information of this legality
-                </div>
-                <a href="./assets/files/file-izin-usaha-1.pdf" download
-                  ><i class="far fa-file-pdf text-danger"></i>
-                </a>
-                <a href="./assets/files/file-izin-usaha-2.pdf" download
-                  ><i class="far fa-file-pdf text-danger"></i>
-                </a>
-                <a href="./assets/files/file-izin-usaha-3.pdf" download
-                  ><i class="far fa-file-pdf text-danger"></i>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#F6F9FC"
+        fill-opacity="1"
+        d="M0,192L120,202.7C240,213,480,235,720,234.7C960,235,1200,213,1320,202.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+      ></path>
+    </svg>
+    <section id="produk" style="background-color: #f6f9fc">
+      <div class="container">
+        <div class="text-md-center text-left">
+          <div class="title-section">Produk</div>
+        </div>
+        <ul
+          class="nav nav-pills mb-3 justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="mega-bonanza-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#mega-bonanza"
+              type="button"
+              role="tab"
+              aria-controls="mega-bonanza"
+              aria-selected="true"
+            >
+              Mega Bonanza
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="super-bonanza-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#super-bonanza"
+              type="button"
+              role="tab"
+              aria-controls="super-bonanza"
+              aria-selected="false"
+            >
+              Super Bonanza
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="bonanza-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#bonanza"
+              type="button"
+              role="tab"
+              aria-controls="bonanza"
+              aria-selected="false"
+            >
+              Bonanza
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content pt-3" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="mega-bonanza"
+            role="tabpanel"
+            aria-labelledby="mega-bonanza-tab"
+          >
+            <div class="row justify-content-center g-4">
+              <div class="col-xxl-3 col-lg-4 col-md-6">
+                <div class="card h-100">
+                  <img
+                    src="./assets/image/produk/mb/1.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-3 col-lg-4 col-md-6">
+                <div class="card h-100">
+                  <img
+                    src="./assets/image/produk/mb/4.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Lucca (48/105)</p>
+                      <p>7000 KIRI 7000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-3 col-lg-4 col-md-6">
+                <div class="card h-100">
+                  <img
+                    src="./assets/image/produk/mb/3.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Monza (60/120)</p>
+                      <p>10.000 KIRI 10.000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-3 col-lg-4 col-md-6">
+                <div class="card h-100">
+                  <img
+                    src="./assets/image/produk/mb/2.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="super-bonanza"
+            role="tabpanel"
+            aria-labelledby="super-bonanza-tab"
+          >
+            <div>
+              <i
+                >Berikut contoh tampilan apabila isi konten terlalu banyak,
+                yakni geser konten secara vertical</i
+              >
+            </div>
+            <div
+              style="overflow: auto"
+              class="row hidden-scrollable flex-nowrap g-4"
+            >
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/1.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/2.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/3.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/4.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/5.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/6.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/7.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/8.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/9.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/10.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/11.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/12.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/13.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8">
+                <div class="card h-100">
+                  <img src="./assets/image/produk/sb/14.png" alt="" />
+                  <div class="card-body">
+                    <div class="card-title use-global fw-bold">
+                      <p>La Cassa (30/75)</p>
+                      <p>6000 KIRI 6000 KANAN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="bonanza"
+            role="tabpanel"
+            aria-labelledby="bonanza-tab"
+          >
+            ...
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#F6F9FC"
+        fill-opacity="1"
+        d="M0,192L120,202.7C240,213,480,235,720,234.7C960,235,1200,213,1320,202.7L1440,192L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+      ></path>
+    </svg>
 
     <section class="py-4" id="market-plan">
       <div class="container">
@@ -618,6 +935,26 @@
         </div>
       </div>
     </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#f6f9fc"
+        fill-opacity="1"
+        d="M0,0L120,37.3C240,75,480,149,720,197.3C960,245,1200,267,1320,277.3L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+      ></path>
+    </svg>
+    <section class="py-4" id="gallery" style="background-color: #f6f9fc">
+      <div class="container">
+        <div class="text-md-center text-left title-section">Gallery</div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#f6f9fc"
+        fill-opacity="1"
+        d="M0,0L120,37.3C240,75,480,149,720,197.3C960,245,1200,267,1320,277.3L1440,288L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+      ></path>
+    </svg>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -630,7 +967,8 @@
 
     <!-- owl carousel -->
 
-    <script src="./assets/vendor/owl-carousel/olw-carousel.min.js"></script>
+    <!-- my functions -->
+    <script src="./assets/js/function.js"></script>
 
     <!-- AOS -->
     <script src="./assets/vendor/aos/aos.js"></script>

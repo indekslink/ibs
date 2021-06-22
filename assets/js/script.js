@@ -50,6 +50,10 @@ clickMenu.forEach((m) => {
   });
 });
 
+// document.querySelectorAll('#produk button.nav-link').forEach(el=>{
+//   el.addEventListener('click',function)
+// })
+
 // const sliderMarketPlan = document.getElementById("carouselMarketPlan");
 // const carouselBsMarketPlan = new bootstrap.Carousel(sliderMarketPlan, {
 //   wrap: false,
