@@ -209,6 +209,61 @@
     font-size: 14px;
   }
 }
+
+// OWL CAROUSEL
+.owl-carousel {
+  .owl-stage {
+    display: flex;
+    .card {
+      height: 100%;
+      &:hover {
+        .lightbox::after {
+          opacity: 1;
+        }
+      }
+
+      &.just-image {
+        height: 40vmin;
+        .lightbox {
+          height: 100%;
+        }
+      }
+      .lightbox {
+        height: 60%;
+
+        position: relative;
+        &::after {
+          transition: 0.5s ease;
+          font-family: "Font Awesome 5 Free";
+          content: "\f06e";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 30px;
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          opacity: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          bottom: 0;
+        }
+        &:hover {
+          &::after {
+            opacity: 1;
+          }
+        }
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
 // hover card and set image scale
 #produk,
 #gallery {
@@ -321,22 +376,15 @@ section {
     }
   }
 
-  &#produk {
-    .nav-pills .nav-link.active,
-    .nav-pills .show > .nav-link {
-      background-color: variabel.$green !important;
-      font-weight: 500;
-      color: white;
-    }
-    .nav-link {
-      font-size: 15px;
-      color: black;
-    }
-    .row {
-      .card {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-      }
-    }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: variabel.$green !important;
+    font-weight: 500;
+    color: white;
+  }
+  .nav-link {
+    font-size: 15px;
+    color: black;
   }
 
   &#market-plan {
@@ -377,9 +425,6 @@ section {
   }
 
   &#content-testimoni {
-    .card {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    }
     #success-leader {
       img {
         border-radius: 0 50% 50% 0;

@@ -15,8 +15,23 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+
     <!-- AOS -->
     <link rel="stylesheet" href="./assets/vendor/aos/aos.css" />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/owl-carousel/owl-carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/owl-carousel/owl-carousel-theme.min.css"
+    />
 
     <!-- font awesome -->
     <link
@@ -464,67 +479,65 @@
             role="tabpanel"
             aria-labelledby="mega-bonanza-tab"
           >
-            <div class="row justify-content-center g-4">
-              <div class="col-xxl-3 col-lg-4 col-md-6">
-                <div class="card h-100">
-                  <img
-                    src="./assets/image/produk/mb/1.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+            <div class="owl-carousel owl-theme">
+              <div class="card">
+                <img
+                  src="./assets/image/produk/mb/1.jpeg"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="mb"
+                  alt="..."
+                />
 
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Cassa (30/75)</p>
+                    <p>6000 KIRI 6000 KANAN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/mb/4.jpeg"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="mb"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Lucca (48/105)</p>
+                    <p>7000 KIRI 7000 KANAN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/mb/3.jpeg"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="mb"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Monza (60/120)</p>
+                    <p>10.000 KIRI 10.000 KANAN</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-xxl-3 col-lg-4 col-md-6">
-                <div class="card h-100">
-                  <img
-                    src="./assets/image/produk/mb/4.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Lucca (48/105)</p>
-                      <p>7000 KIRI 7000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/mb/2.jpeg"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="mb"
+                  alt="..."
+                />
 
-              <div class="col-xxl-3 col-lg-4 col-md-6">
-                <div class="card h-100">
-                  <img
-                    src="./assets/image/produk/mb/3.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Monza (60/120)</p>
-                      <p>10.000 KIRI 10.000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-3 col-lg-4 col-md-6">
-                <div class="card h-100">
-                  <img
-                    src="./assets/image/produk/mb/2.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Monza (60/120)</p>
-                      <p>10.000 KIRI 10.000 KANAN</p>
-                    </div>
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Monza (60/120)</p>
+                    <p>10.000 KIRI 10.000 KANAN</p>
                   </div>
                 </div>
               </div>
@@ -536,164 +549,80 @@
             role="tabpanel"
             aria-labelledby="super-bonanza-tab"
           >
-            <div>
-              <i
-                >Berikut contoh tampilan apabila isi konten terlalu banyak,
-                yakni geser konten secara vertical</i
-              >
-            </div>
-            <div class="row hidden-scrollable flex-nowrap g-4">
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/1.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+            <div class="owl-carousel owl-theme">
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/1.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="sb"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Cassa (30/75)</p>
+                    <p>6000 KIRI 6000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/2.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/14.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="sb"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Cassa (30/75)</p>
+                    <p>6000 KIRI 6000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/3.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/10.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="sb"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Lucca (48/105)</p>
+                    <p>7000 KIRI 7000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/4.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/11.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="sb"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Monza (60/120)</p>
+                    <p>10.000 KIRI 10.000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/5.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/6.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/7.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/8.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/9.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/10.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/11.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/12.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/13.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/14.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/12.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="sb"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Monza (60/120)</p>
+                    <p>10.000 KIRI 10.000 KANAN</p>
                   </div>
                 </div>
               </div>
@@ -705,109 +634,95 @@
             role="tabpanel"
             aria-labelledby="bonanza-tab"
           >
-            <div>
-              <i
-                >Berikut contoh tampilan apabila isi konten terlalu banyak,
-                yakni geser konten secara vertical</i
-              >
-            </div>
-            <div class="row hidden-scrollable flex-nowrap g-4">
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/6.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+            <div class="owl-carousel owl-theme">
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/1.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="bonanza"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Cassa (30/75)</p>
+                    <p>6000 KIRI 6000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/7.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/14.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="bonanza"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Cassa (30/75)</p>
+                    <p>6000 KIRI 6000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/8.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/6.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="bonanza"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Lucca (48/105)</p>
+                    <p>7000 KIRI 7000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/9.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/10.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="bonanza"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Lucca (48/105)</p>
+                    <p>7000 KIRI 7000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/10.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/11.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="bonanza"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Monza (60/120)</p>
+                    <p>10.000 KIRI 10.000 KANAN</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/11.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/12.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/13.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-5 col-8">
-                <div class="card h-100">
-                  <img src="./assets/image/produk/sb/14.png" alt="" />
-                  <div class="card-body use-global">
-                    <div class="card-title fw-bold">
-                      <p>La Cassa (30/75)</p>
-                      <p>6000 KIRI 6000 KANAN</p>
-                    </div>
+
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/12.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="bonanza"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Monza (60/120)</p>
+                    <p>10.000 KIRI 10.000 KANAN</p>
                   </div>
                 </div>
               </div>
@@ -1063,48 +978,406 @@
         d="M0,0L120,37.3C240,75,480,149,720,197.3C960,245,1200,267,1320,277.3L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
       ></path>
     </svg>
-    <section id="gallery" style="background-color: #f6f9fc">
+    <section id="gallery" class="pb-3" style="background-color: #f6f9fc">
       <div class="container">
         <div class="text-md-center text-left title-section">Gallery</div>
-        <div class="row g-2 justify-content-center">
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100">
-              <img class="h-100" src="./assets/image/produk/mb/1.jpeg" alt="" />
+        <ul
+          class="nav nav-pills mb-3 justify-content-center"
+          id="gallery-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="umroh-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#umroh"
+              type="button"
+              role="tab"
+              aria-controls="umroh"
+              aria-selected="true"
+            >
+              Umroh
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="manasik-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#manasik"
+              type="button"
+              role="tab"
+              aria-controls="manasik"
+              aria-selected="false"
+            >
+              Manasik
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="ibs-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#ibs"
+              type="button"
+              role="tab"
+              aria-controls="ibs"
+              aria-selected="false"
+            >
+              Profile IBS
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content pt-3" id="gallery-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="umroh"
+            role="tabpanel"
+            aria-labelledby="umroh-tab"
+          >
+            <div class="owl-carousel owl-theme">
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(1).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(2).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(3).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(4).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(5).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(6).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(7).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(8).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(9).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(10).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(11).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(12).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(13).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(14).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(15).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="umroh"
+                />
+              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100">
-              <img class="h-100" src="./assets/image/produk/mb/2.jpeg" alt="" />
+          <div
+            class="tab-pane fade"
+            id="manasik"
+            role="tabpanel"
+            aria-labelledby="manasik-tab"
+          >
+            <div class="owl-carousel owl-theme">
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(16).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(17).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(18).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(19).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(20).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(21).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(22).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(23).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(24).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(25).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(26).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(27).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(28).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
+              <div class="card just-image">
+                <img
+                  src="./assets/image/gallery/gallery-(29).jpeg"
+                  alt=""
+                  class="card-img-top add-lightbox"
+                  data-lb-id="manasik"
+                />
+              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100">
-              <img class="h-100" src="./assets/image/produk/mb/3.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100">
-              <img class="h-100" src="./assets/image/produk/mb/1.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100">
-              <img class="h-100" src="./assets/image/produk/sb/11.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100">
-              <img class="h-100" src="./assets/image/produk/sb/4.png" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100">
-              <img class="h-100" src="./assets/image/produk/sb/6.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100">
-              <img class="h-100" src="./assets/image/produk/sb/8.png" alt="" />
+          <div
+            class="tab-pane fade"
+            id="ibs"
+            role="tabpanel"
+            aria-labelledby="ibs-tab"
+          >
+            <div class="owl-carousel owl-theme">
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/1.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="ibs"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Cassa (30/75)</p>
+                    <p>6000 KIRI 6000 KANAN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/14.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="ibs"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Cassa (30/75)</p>
+                    <p>6000 KIRI 6000 KANAN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/6.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="ibs"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Lucca (48/105)</p>
+                    <p>7000 KIRI 7000 KANAN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/10.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="ibs"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Lucca (48/105)</p>
+                    <p>7000 KIRI 7000 KANAN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/11.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="ibs"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Monza (60/120)</p>
+                    <p>10.000 KIRI 10.000 KANAN</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./assets/image/produk/sb/12.png"
+                  class="card-img-top add-lightbox"
+                  data-lb-id="ibs"
+                  alt="..."
+                />
+
+                <div class="card-body use-global">
+                  <div class="card-title fw-bold">
+                    <p>La Monza (60/120)</p>
+                    <p>10.000 KIRI 10.000 KANAN</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1126,74 +1399,113 @@
             <div class="mb-3">
               <span class="title-section-2">Manfaat Produk</span>
             </div>
-            <div class="row g-4 flex-nowrap hidden-scrollable">
-              <div class="col-11 col-sm-9 col-md-7 col-lg-5">
-                <div class="card h-100">
-                  <div class="row h-100 g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/image/testimoni/manfaat-produk/kalung.png"
-                        class="card-img-top h-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col-8">
-                      <div class="card-body use-global">
-                        <div class="card-title fs-5">Kalung</div>
-                        <div class="card-text mb-1">
-                          Memperlancar peredaran darah
-                        </div>
-                        <div class="card-text mb-1">
-                          Menjadikan tubuh lebih bugar
-                        </div>
+            <div class="owl-carousel owl-theme">
+              <div class="card">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/manfaat-produk/kalung.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Kalung</div>
+                      <div class="card-text mb-1">
+                        Memperlancar peredaran darah
+                      </div>
+                      <div class="card-text mb-1">
+                        Menjadikan tubuh lebih bugar
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-11 col-sm-9 col-md-7 col-lg-5">
-                <div class="card h-100">
-                  <div class="row h-100 g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/image/testimoni/manfaat-produk/cincin-1.png"
-                        class="card-img-top h-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col-8">
-                      <div class="card-body use-global">
-                        <div class="card-title fs-5">Cincin</div>
-                        <div class="card-text mb-1">
-                          Memperlancar peredaran darah
-                        </div>
-                        <div class="card-text mb-1">
-                          Menjadikan tubuh lebih bugar
-                        </div>
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/manfaat-produk/cincin-1.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Cincin</div>
+                      <div class="card-text mb-1">
+                        Memperlancar peredaran darah
+                      </div>
+                      <div class="card-text mb-1">
+                        Menjadikan tubuh lebih bugar
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-11 col-sm-9 col-md-7 col-lg-5">
-                <div class="card h-100">
-                  <div class="row h-100 g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/image/testimoni/manfaat-produk/cincin-2.png"
-                        class="card-img-top h-100"
-                        alt="..."
-                      />
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/manfaat-produk/cincin-1.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Cincin</div>
+                      <div class="card-text mb-1">
+                        Memperlancar peredaran darah
+                      </div>
+                      <div class="card-text mb-1">
+                        Menjadikan tubuh lebih bugar
+                      </div>
                     </div>
-                    <div class="col-8">
-                      <div class="card-body use-global">
-                        <div class="card-title fs-5">Cincin</div>
-                        <div class="card-text mb-1">
-                          Memperlancar peredaran darah
-                        </div>
-                        <div class="card-text mb-1">
-                          Menjadikan tubuh lebih bugar
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/manfaat-produk/cincin-1.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Cincin</div>
+                      <div class="card-text mb-1">
+                        Memperlancar peredaran darah
+                      </div>
+                      <div class="card-text mb-1">
+                        Menjadikan tubuh lebih bugar
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/manfaat-produk/cincin-2.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Cincin</div>
+                      <div class="card-text mb-1">
+                        Memperlancar peredaran darah
+                      </div>
+                      <div class="card-text mb-1">
+                        Menjadikan tubuh lebih bugar
                       </div>
                     </div>
                   </div>
@@ -1205,68 +1517,127 @@
             <div class="mb-3">
               <span class="title-section-2">Success leader</span>
             </div>
-            <div class="row g-4 flex-nowrap hidden-scrollable">
-              <div class="col-11 col-sm-9 col-md-7 col-lg-5">
-                <div class="card h-100">
-                  <div class="row h-100 g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/image/testimoni/success-leader/1.jpg"
-                        class="card-img-top h-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col-8">
-                      <div class="card-body use-global">
-                        <div class="card-title fs-5">Robert</div>
-                        <div class="card-text mb-1">
-                          Saya suka barang-barangnya, sangat membantu untuk
-                          menjaga kesehatan
-                        </div>
+            <div class="owl-carousel owl-theme">
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/success-leader/1.jpg"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Robert</div>
+                      <div class="card-text mb-1">
+                        Saya suka barang-barangnya, sangat membantu untuk
+                        menjaga kesehatan
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-11 col-sm-9 col-md-7 col-lg-5">
-                <div class="card h-100">
-                  <div class="row h-100 g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/image/testimoni/success-leader/2.jpg"
-                        class="card-img-top h-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col-8">
-                      <div class="card-body use-global">
-                        <div class="card-title fs-5">Antonius</div>
-                        <div class="card-text mb-1">
-                          Saya suka barang-barangnya, sangat membantu untuk
-                          menjaga kesehatan
-                        </div>
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/success-leader/1.jpg"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Robert</div>
+                      <div class="card-text mb-1">
+                        Saya suka barang-barangnya, sangat membantu untuk
+                        menjaga kesehatan
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-11 col-sm-9 col-md-7 col-lg-5">
-                <div class="card h-100">
-                  <div class="row h-100 g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/image/testimoni/success-leader/3.jpg"
-                        class="card-img-top h-100"
-                        alt="..."
-                      />
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/success-leader/2.jpg"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Antonius</div>
+                      <div class="card-text mb-1">
+                        Saya suka barang-barangnya, sangat membantu untuk
+                        menjaga kesehatan
+                      </div>
                     </div>
-                    <div class="col-8">
-                      <div class="card-body use-global">
-                        <div class="card-title fs-5">Vallenio</div>
-                        <div class="card-text mb-1">
-                          Saya suka barang-barangnya, sangat membantu untuk
-                          menjaga kesehatan
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/manfaat-produk/cincin-1.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Cincin</div>
+                      <div class="card-text mb-1">
+                        Memperlancar peredaran darah
+                      </div>
+                      <div class="card-text mb-1">
+                        Menjadikan tubuh lebih bugar
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/manfaat-produk/cincin-1.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Cincin</div>
+                      <div class="card-text mb-1">
+                        Memperlancar peredaran darah
+                      </div>
+                      <div class="card-text mb-1">
+                        Menjadikan tubuh lebih bugar
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100">
+                <div class="row h-100 g-0">
+                  <div class="col-4">
+                    <img
+                      src="./assets/image/testimoni/success-leader/3.jpg"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body use-global">
+                      <div class="card-title fs-5">Vallenio</div>
+                      <div class="card-text mb-1">
+                        Saya suka barang-barangnya, sangat membantu untuk
+                        menjaga kesehatan
                       </div>
                     </div>
                   </div>
@@ -1327,7 +1698,7 @@
     <footer class="bg-dark text-light py-4">
       <div class="container">
         <div class="text-center">
-          Copyright &copy;
+          &copy;
           <script>
             document.write(new Date().getFullYear());
           </script>
@@ -1341,6 +1712,7 @@
     <!-- Modal -->
     <div
       class="modal fade"
+      data-bs-backdrop="static"
       id="modalRegister"
       tabindex="-1"
       aria-labelledby="modalRegisterLabel"
@@ -1356,10 +1728,10 @@
               <input
                 type="text"
                 class="form-control"
-                id="floatingInput"
+                id="floatingName"
                 placeholder="name"
               />
-              <label for="floatingInput">Name</label>
+              <label for="floatingName">Name</label>
             </div>
             <div class="form-floating mb-3">
               <input
@@ -1388,7 +1760,13 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button
+              type="button"
+              onclick="alert('Maaf, form registrasi ini belum berfungsi !')"
+              class="btn btn-primary"
+            >
+              Save changes
+            </button>
           </div>
         </div>
       </div>
@@ -1401,13 +1779,14 @@
     ></script>
 
     <!-- Jquery for owl carousel -->
-    <script src="./assets/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
     <!-- owl carousel -->
-
+    <script src="./assets/vendor/owl-carousel/olw-carousel.min.js"></script>
     <!-- my functions -->
     <script src="./assets/js/function.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- AOS -->
     <script src="./assets/vendor/aos/aos.js"></script>
 

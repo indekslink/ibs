@@ -60,7 +60,55 @@ clickMenu.forEach((m) => {
 //   el.addEventListener('click',function)
 // })
 
-// const sliderMarketPlan = document.getElementById("carouselMarketPlan");
-// const carouselBsMarketPlan = new bootstrap.Carousel(sliderMarketPlan, {
-//   wrap: false,
-// });
+const sliderMarketPlan = document.getElementById("carouselMarketPlan");
+const carouselBsMarketPlan = new bootstrap.Carousel(sliderMarketPlan, {
+  wrap: false,
+});
+
+$("#produk .owl-carousel, #gallery .owl-carousel").owlCarousel({
+  stagePadding: 20,
+  margin: 5,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    569: {
+      items: 2,
+    },
+    767: {
+      items: 3,
+    },
+    1024: {
+      items: 4,
+    },
+  },
+});
+$("#content-testimoni .owl-carousel").owlCarousel({
+  stagePadding: 20,
+  margin: 10,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    569: {
+      items: 2,
+    },
+    767: {
+      items: 3,
+    },
+  },
+});
+
+function elLightBox(src, idLightbox) {
+  return `<a href="${src}"  data-fancybox="${idLightbox}" class="lightbox"></a>`;
+}
+$("img.add-lightbox").each((i, el) => {
+  let href = $(el).attr("src");
+  let lightBoxId = $(el).data("lb-id");
+
+  $(el)
+    .parent()
+    .prepend($(elLightBox(href, lightBoxId)).html(el));
+});

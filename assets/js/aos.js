@@ -5,7 +5,7 @@ const cardsLegalitas = document.querySelectorAll("#legalitas .row .card");
 const marketPlans = document.querySelectorAll(
   "#market-plan .carousel-item .row"
 );
-const btnProduks = document.querySelectorAll("#produk .nav-pills .nav-item");
+const btnProduks = document.querySelectorAll(".nav-pills .nav-item");
 const cardsProduk = document.querySelectorAll("#produk .card");
 const gallery = document.querySelectorAll("#gallery .card");
 const cardsTestimoni = document.querySelectorAll("#content-testimoni .card");

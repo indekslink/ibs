@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .my-nav {
@@ -203,6 +204,50 @@
   font-size: 14px;
 }
 
+.owl-carousel .owl-stage {
+  display: flex;
+}
+.owl-carousel .owl-stage .card {
+  height: 100%;
+}
+.owl-carousel .owl-stage .card:hover .lightbox::after {
+  opacity: 1;
+}
+.owl-carousel .owl-stage .card.just-image {
+  height: 40vmin;
+}
+.owl-carousel .owl-stage .card.just-image .lightbox {
+  height: 100%;
+}
+.owl-carousel .owl-stage .card .lightbox {
+  height: 60%;
+  position: relative;
+}
+.owl-carousel .owl-stage .card .lightbox::after {
+  transition: 0.5s ease;
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+}
+.owl-carousel .owl-stage .card .lightbox:hover::after {
+  opacity: 1;
+}
+.owl-carousel .owl-stage .card .lightbox img {
+  height: 100%;
+}
+
 #produk .card,
 #gallery .card {
   overflow: hidden;
@@ -297,18 +342,15 @@ section#legalitas .container .card .card-body .file-pendukung a i {
   font-size: 25px;
   margin-right: 10px;
 }
-section#produk .nav-pills .nav-link.active,
-section#produk .nav-pills .show > .nav-link {
+section .nav-pills .nav-link.active,
+section .nav-pills .show > .nav-link {
   background-color: #198754 !important;
   font-weight: 500;
   color: white;
 }
-section#produk .nav-link {
+section .nav-link {
   font-size: 15px;
   color: black;
-}
-section#produk .row .card {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 section#market-plan .text-market-plan .number span {
   width: 30px;
@@ -336,9 +378,6 @@ section#contact .list-group-item .value {
 }
 section#contact iframe {
   height: 50vmin;
-}
-section#content-testimoni .card {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 section#content-testimoni #success-leader img {
   border-radius: 0 50% 50% 0;
