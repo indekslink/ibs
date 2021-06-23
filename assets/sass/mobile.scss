@@ -1,6 +1,6 @@
 @media (max-width: 569px) {
   .hidden-scrollable {
-    overflow-y: scroll;
+    overflow-x: scroll;
     &::-webkit-scrollbar {
       display: none;
     }
@@ -13,7 +13,7 @@
   }
   #legalitas {
     .row {
-      overflow-y: scroll;
+      overflow-x: scroll;
       &::-webkit-scrollbar {
         display: none;
       }

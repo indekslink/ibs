@@ -15,6 +15,8 @@ window.onscroll = function () {
   if (!toggle.classList.contains("show-menu")) {
     navbar.classList.toggle("scrolling", scroll > 5);
   }
+
+  document.querySelector("a.to-top").classList.toggle("show", scroll > 100);
 };
 
 toggle.addEventListener("click", function () {
@@ -33,11 +35,13 @@ let clickMenu = Array.from(
 );
 
 const menuHomeInLogo = document.querySelector(".logo a");
+const toTop = document.querySelector("a.to-top");
 
 const useSubMenu = Array.from(
   document.querySelectorAll(".use-sub-menu li a.dropdown-item")
 ).map((item) => clickMenu.push(item));
-clickMenu.push(menuHomeInLogo);
+
+clickMenu.push(menuHomeInLogo, toTop);
 
 clickMenu.forEach((m) => {
   m.addEventListener("click", function (e) {

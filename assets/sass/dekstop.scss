@@ -192,6 +192,10 @@
     opacity: 0;
   }
 }
+.hidden-scrollable {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
 .waves {
   background-color: rgba(25, 135, 84, 0.3);
   overflow: hidden;
@@ -334,62 +338,6 @@ section {
       }
     }
   }
-  // &#legalitas {
-  //   background-image: url(../image/bg-legalitas.jpeg);
-  //   background-size: cover;
-  //   background-attachment: fixed;
-  //   background-position: center;
-  //   color: white;
-  //   &,
-  //   .container {
-  //     position: relative;
-  //   }
-  //   .container {
-  //     z-index: 2;
-  //     .title-section {
-  //       text-shadow: 3px 3px rgba(0, 0, 0, 0.8);
-  //     }
-  //     .card {
-  //       text-transform: uppercase;
-  //       color: black;
-  //       .card-title {
-  //         font-weight: bold;
-  //         font-size: 20px;
-  //       }
-  //       .card-body {
-  //         .number {
-  //           font-size: 14px;
-  //           color: gray;
-  //         }
-  //       }
-  //       .card-footer {
-  //         text-transform: none;
-  //         font-size: 14px;
-  //         .text {
-  //           margin-bottom: 10px;
-  //         }
-  //         a {
-  //           text-decoration: none;
-  //           i {
-  //             font-size: 25px;
-  //             margin-right: 10px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     bottom: 0;
-  //     background-attachment: fixed;
-  //     background-color: rgba(0, 0, 0, 0.5);
-  //     pointer-events: none;
-  //   }
-  // }
 
   &#market-plan {
     .text-market-plan {
@@ -415,6 +363,7 @@ section {
       justify-content: space-evenly;
     }
     .list-group-item {
+      display: flex;
       background-color: transparent;
       border: none;
       font-size: 17px;
@@ -425,5 +374,28 @@ section {
     iframe {
       height: 50vmin;
     }
+  }
+
+  &#content-testimoni {
+    .card {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    #success-leader {
+      img {
+        border-radius: 0 50% 50% 0;
+      }
+    }
+  }
+}
+
+a.to-top {
+  opacity: 0;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 10;
+  transition: 0.5s ease;
+  &.show {
+    opacity: 1;
   }
 }
