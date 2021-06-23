@@ -190,9 +190,25 @@
   overflow: hidden;
 }
 
-.card-title.use-global {
+.card-body.use-global .card-title {
   font-weight: 500;
   font-size: 15px;
+}
+.card-body.use-global .card-text {
+  font-size: 14px;
+}
+
+#produk .card,
+#gallery .card {
+  overflow: hidden;
+}
+#produk .card img,
+#gallery .card img {
+  transition: 0.5s ease;
+}
+#produk .card:hover img,
+#gallery .card:hover img {
+  transform: scale(1.1);
 }
 
 section {
@@ -210,7 +226,7 @@ section .read-text::before {
   content: "...";
 }
 section .title-section {
-  font-size: 30px;
+  font-size: 35px;
   padding-bottom: 2rem;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
@@ -299,6 +315,21 @@ section#market-plan .text-market-plan .number span {
 }
 section#market-plan .text-market-plan .isi-text p {
   font-size: 14px;
+}
+section#contact ul {
+  height: 100%;
+  justify-content: space-evenly;
+}
+section#contact .list-group-item {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+}
+section#contact .list-group-item .value {
+  margin-left: 10px;
+}
+section#contact iframe {
+  height: 50vmin;
 }
 
 @media (max-width: 767px) {

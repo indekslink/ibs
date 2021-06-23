@@ -28,7 +28,10 @@ toggle.addEventListener("click", function () {
   menus.classList.add("fade-in");
 });
 
-let clickMenu = Array.from(document.querySelectorAll("ul.menu a.link-menu"));
+let clickMenu = Array.from(
+  document.querySelectorAll("ul.menu a.link-menu:not(.dropdown-toggle)")
+);
+
 const menuHomeInLogo = document.querySelector(".logo a");
 
 const useSubMenu = Array.from(
@@ -36,7 +39,6 @@ const useSubMenu = Array.from(
 ).map((item) => clickMenu.push(item));
 clickMenu.push(menuHomeInLogo);
 
-// clickMenu = [...clickMenu, useSubMenu];
 clickMenu.forEach((m) => {
   m.addEventListener("click", function (e) {
     e.preventDefault();

@@ -7,9 +7,11 @@ const marketPlans = document.querySelectorAll(
 );
 const btnProduks = document.querySelectorAll("#produk .nav-pills .nav-item");
 const cardsProduk = document.querySelectorAll("#produk .card");
+const gallery = document.querySelectorAll("#gallery .card");
+const cardsTestimoni = document.querySelectorAll("#content-testimoni .card");
 
 titleSections.forEach((ts) => {
-  ts.parentElement.dataset.aos = "fade-right";
+  ts.dataset.aos = "fade-right";
 });
 titleSections2.forEach((ts2) => {
   ts2.parentElement.dataset.aos = "fade-up";
@@ -31,11 +33,20 @@ cardsProduk.forEach((cp, i) => {
   cp.dataset.aos = "flip-left";
   cp.dataset.aosDelay = (i + 1) * 100;
 });
+gallery.forEach((g, i) => {
+  g.dataset.aos = "flip-left";
+  g.dataset.aosDelay = (i + 1) * 100;
+});
 
 marketPlans.forEach((mp) => {
   mp.children[0].dataset.aos = "fade-right";
   mp.children[1].dataset.aos = "fade-left";
   mp.children[1].dataset.aosDelay = 200;
+});
+
+cardsTestimoni.forEach((ct, i) => {
+  ct.dataset.aos = "fade-up";
+  ct.dataset.aosDelay = (i + 1) * 100;
 });
 
 let currentWidth = $(window).width();
@@ -51,7 +62,9 @@ window.onresize = function () {
 let reload = true;
 let oriArrays = null;
 function cekDevice() {
-  oriArrays = reload ? arrayGroupAOS(cardsProduk, cardsLegalitas) : oriArrays;
+  oriArrays = reload
+    ? arrayGroupAOS(cardsProduk, cardsLegalitas, gallery)
+    : oriArrays;
   const manipulate = oriArrays;
 
   if (currentWidth < 767) {
