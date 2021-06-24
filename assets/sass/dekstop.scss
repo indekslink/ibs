@@ -444,3 +444,18 @@ a.to-top {
     opacity: 1;
   }
 }
+
+.keuntungan-mitra {
+  .title-section-2 {
+    display: flex;
+    font-size: 14px;
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f054";
+      display: inline-block;
+      padding-right: 5px;
+      vertical-align: middle;
+      font-weight: bold;
+    }
+  }
+}

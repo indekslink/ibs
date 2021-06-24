@@ -395,6 +395,19 @@ a.to-top.show {
   opacity: 1;
 }
 
+.keuntungan-mitra .title-section-2 {
+  display: flex;
+  font-size: 14px;
+}
+.keuntungan-mitra .title-section-2::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  display: inline-block;
+  padding-right: 5px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
 @media (max-width: 767px) {
   .hamburger-menu {
     display: flex !important;
