@@ -220,6 +220,7 @@
   height: 100%;
 }
 .owl-carousel .owl-stage .card .lightbox {
+  overflow: hidden;
   height: 60%;
   position: relative;
 }
