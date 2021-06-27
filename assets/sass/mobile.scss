@@ -28,14 +28,10 @@
 
   #home {
     .carousel-item {
-      &.bg-slider-profile img {
+      &.image-full-height img {
         width: 100% !important;
       }
-      &.resize-height-mobile {
-        img {
-          height: 50vh !important;
-        }
-      }
+    
     }
   }
 }

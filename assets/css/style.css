@@ -123,7 +123,7 @@
 #home.carousel .carousel-item {
   background-image: url(../image/slider/bg-slider-profile.png);
 }
-#home.carousel .carousel-item.bg-slider-profile img {
+#home.carousel .carousel-item.image-full-height img {
   width: 50vh;
   margin: 0 auto;
 }
@@ -387,8 +387,11 @@ section#contact .list-group-item .value {
 section#contact iframe {
   height: 50vmin;
 }
-section#content-testimoni #success-leader img {
-  border-radius: 0 50% 50% 0;
+section#content-testimoni #success-leader .card-body {
+  padding: 0.5rem;
+}
+section#produk .tab-pane {
+  text-align: center;
 }
 
 a.to-top {
@@ -467,11 +470,8 @@ a.to-top.show {
     /* Firefox */
   }
 
-  #home .carousel-item.bg-slider-profile img {
+  #home .carousel-item.image-full-height img {
     width: 100% !important;
-  }
-  #home .carousel-item.resize-height-mobile img {
-    height: 50vh !important;
   }
 }
 body {

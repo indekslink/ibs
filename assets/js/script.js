@@ -125,3 +125,19 @@ var typed = new Typed(".text-typed", {
   backSpeed: 100,
   startDelay: 1000,
 });
+
+// get size image of slider
+const sliderImages = document.querySelectorAll("#home .carousel-item img");
+sliderImages.forEach((img, i) => {
+  if (img.height > img.width) {
+    img.parentElement.classList.add("image-full-height");
+  } else {
+    img.classList.add("w-100");
+  }
+});
+
+function register() {
+  const url =
+    "https://api.whatsapp.com/send?phone=6282333888499&text=Silahkan%20isi%20form%20tersebut:%0A%0ANama%20:%20%0AEmail%20:%20%0ANo.Telepon%20:%20";
+  window.open(url, "_blank");
+}

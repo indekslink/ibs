@@ -126,7 +126,7 @@
   position: relative;
   .carousel-item {
     background-image: url(../image/slider/bg-slider-profile.png);
-    &.bg-slider-profile {
+    &.image-full-height {
       img {
         width: 50vh;
         margin: 0 auto;
@@ -436,9 +436,14 @@ section {
 
   &#content-testimoni {
     #success-leader {
-      img {
-        border-radius: 0 50% 50% 0;
+      .card-body {
+        padding: 0.5rem;
       }
+    }
+  }
+  &#produk {
+    .tab-pane {
+      text-align: center;
     }
   }
 }
