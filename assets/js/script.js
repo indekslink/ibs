@@ -112,3 +112,16 @@ $("img.add-lightbox").each((i, el) => {
     .parent()
     .prepend($(elLightBox(href, lightBoxId)).html(el));
 });
+var typed = new Typed(".text-typed", {
+  // Waits 1000ms after typing "First"
+  strings: [
+    "Leader IBS Indonesia ",
+    " Travel Consultant ",
+    " Tour Leader Umroh",
+  ],
+  loop: true,
+  typeSpeed: 100,
+  backDelay: 1000,
+  backSpeed: 100,
+  startDelay: 1000,
+});
