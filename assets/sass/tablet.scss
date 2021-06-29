@@ -20,4 +20,24 @@
       color: black !important;
     }
   }
+
+  #home .carousel-item.profile-slider {
+    .text {
+      background-image: url(../image/slider/slider-profile.jpeg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      height: 100vh;
+
+      .name {
+        font-size: 30px;
+      }
+      .text-typed {
+        font-size: 18px;
+      }
+      .quot {
+        font-size: 18px;
+      }
+    }
+  }
 }

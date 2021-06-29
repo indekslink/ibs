@@ -51,7 +51,14 @@ clickMenu.forEach((m) => {
     const goToElement = document.querySelector(elementId);
 
     if (goToElement) {
-      window.scrollTo(0, goToElement.offsetTop - 90);
+      window.scrollTo(0, goToElement.offsetTop - 70);
+      if (m.hasAttribute("data-tab-target")) {
+        var someTabTriggerEl = document.querySelector(
+          m.getAttribute("data-tab-target")
+        );
+        var tab = new bootstrap.Tab(someTabTriggerEl);
+        tab.show();
+      }
     }
   });
 });
@@ -114,11 +121,7 @@ $("img.add-lightbox").each((i, el) => {
 });
 var typed = new Typed(".text-typed", {
   // Waits 1000ms after typing "First"
-  strings: [
-    "Leader IBS Indonesia ",
-    " Travel Consultant ",
-    " Tour Leader Umroh",
-  ],
+  strings: ["Leader IBS Indonesia", "Travel Consultant", "Tour Leader Umroh"],
   loop: true,
   typeSpeed: 100,
   backDelay: 1000,
@@ -130,7 +133,7 @@ var typed = new Typed(".text-typed", {
 const sliderImages = document.querySelectorAll("#home .carousel-item img");
 sliderImages.forEach((img, i) => {
   if (img.height > img.width) {
-    img.parentElement.classList.add("image-full-height");
+    // img.parentElement.classList.add("image-full-height");
   } else {
     img.classList.add("w-100");
   }

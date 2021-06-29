@@ -10,6 +10,8 @@ const cardsProduk = document.querySelectorAll("#produk .card");
 const gallery = document.querySelectorAll("#gallery .card");
 const cardsTestimoni = document.querySelectorAll("#content-testimoni .card");
 
+const profileSlider = document.querySelector("#home .profile-slider .row");
+
 titleSections.forEach((ts) => {
   ts.dataset.aos = "fade-right";
 });
@@ -47,6 +49,16 @@ marketPlans.forEach((mp) => {
 cardsTestimoni.forEach((ct, i) => {
   ct.dataset.aos = "fade-up";
   ct.dataset.aosDelay = (i + 1) * 100;
+});
+
+const delaySlider = 100;
+Array.from(profileSlider.children).forEach((child, i) => {
+  child.dataset.aos = (i + 1) % 2 == 0 ? "fade-left" : "fade-right";
+  child.dataset.aosDelay = delaySlider;
+});
+Array.from(profileSlider.children[1].children).forEach((text, i) => {
+  text.dataset.aos = "fade-left";
+  text.dataset.aosDelay = (i + 1) * (delaySlider + 100);
 });
 
 let currentWidth = $(window).width();

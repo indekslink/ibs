@@ -63,14 +63,14 @@
       }
       &.show-menu {
         span:nth-child(1) {
-          transform: rotate(45deg) translate(5px, 6px);
+          transform: rotate(405deg) translate(5px, 6px);
         }
         span:nth-child(2) {
           width: 0;
           opacity: 0;
         }
         span:nth-child(3) {
-          transform: rotate(-45deg) translate(6px, -6px);
+          transform: rotate(-405deg) translate(6px, -6px);
         }
       }
     }
@@ -122,63 +122,120 @@
     }
   }
 }
-#home.carousel {
-  position: relative;
-  .carousel-item {
-    background-image: url(../image/slider/bg-slider-profile.png);
-    &.image-full-height {
-      img {
-        width: 50vh;
-        margin: 0 auto;
-      }
-    }
-    img {
-      height: 100vh;
-    }
-  }
-  .sapaan {
-    pointer-events: none;
-    right: 0;
-    /* display: none; */
-    bottom: 0;
-    display: flex;
-    padding: 20px;
-    /* text-align: justify; */
-    left: 0;
-    top: 0;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    font-weight: 500;
-    /* top: 50%; */
-    /* left: 50%; */
-    color: white;
-    z-index: 3;
-    /* transform: translate(-50%, -50%); */
-    font-size: calc(3vw + 8px);
-    span {
-      font-weight: bold;
-      text-align: center;
-      font-size: calc(3vw + 20px);
-    }
-  }
-  &::after {
-    z-index: 2;
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      transparent
-    );
+@media (min-width: 1400px) {
+  #home {
+    max-width: 1320px;
+    margin: 0 auto;
   }
 }
+#home {
+  &.carousel {
+    // position: relative;
+    .carousel-item {
+      position: relative;
+
+      &.profile-slider {
+        background-image: url(../image/slider/bg-slider-profile.png);
+        height: 100vh;
+        .card {
+          height: 100vh;
+          img {
+            height: 100%;
+          }
+        }
+      }
+      &:not(.profile-slider) {
+        img {
+          height: 100vh;
+        }
+
+        position: relative;
+        &::after {
+          z-index: 2;
+          pointer-events: none;
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.5),
+            transparent
+          );
+        }
+      }
+    }
+    .sapaan {
+      pointer-events: none;
+      right: 0;
+      /* display: none; */
+      bottom: 0;
+      display: flex;
+      padding: 20px;
+      /* text-align: justify; */
+      left: 0;
+      top: 0;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      font-weight: 500;
+      /* top: 50%; */
+      /* left: 50%; */
+      color: white;
+      z-index: 3;
+      /* transform: translate(-50%, -50%); */
+      font-size: calc(3vw + 8px);
+      span {
+        font-weight: bold;
+        text-align: center;
+        font-size: calc(3vw + 20px);
+      }
+    }
+    // &::after {
+    //   z-index: 2;
+    //   pointer-events: none;
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   background-image: linear-gradient(
+    //     to bottom,
+    //     rgba(0, 0, 0, 0.5),
+    //     transparent
+    //   );
+    // }
+
+    .profile-slider {
+      .text {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        text-align: center;
+        .name {
+          font-size: 40px;
+          letter-spacing: 1.5px;
+          font-weight: bold;
+        }
+        .text-typed {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        .quot {
+          font-size: 20px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
 .fade-in {
   animation: fadeIn 1s forwards;
 }
@@ -232,7 +289,7 @@
       }
 
       &.just-image {
-        height: 50vmin;
+        height: 40vmin;
         .lightbox {
           height: 100%;
         }
@@ -275,17 +332,15 @@
 }
 
 // hover card and set image scale
-#produk,
-#gallery {
-  .card {
-    overflow: hidden;
+
+.card.just-image {
+  overflow: hidden;
+  img {
+    transition: 0.5s ease;
+  }
+  &:hover {
     img {
-      transition: 0.5s ease;
-    }
-    &:hover {
-      img {
-        transform: scale(1.1);
-      }
+      transform: scale(1.5);
     }
   }
 }
