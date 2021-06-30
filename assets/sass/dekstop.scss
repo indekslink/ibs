@@ -493,6 +493,9 @@ section {
     #success-leader {
       .card-body {
         padding: 0.5rem;
+        .card-text p {
+          margin-bottom: 0.5rem;
+        }
       }
     }
   }
@@ -543,13 +546,15 @@ a.to-top {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  transition: 0.5s ease;
+
   .spinner-grow {
     margin: 0 10px;
 
     animation-duration: 1s !important;
   }
   &.close {
+    transition: 0.5s ease;
+    pointer-events: none;
     opacity: 0;
     z-index: 0;
   }

@@ -419,6 +419,9 @@ section#contact iframe {
 section#content-testimoni #success-leader .card-body {
   padding: 0.5rem;
 }
+section#content-testimoni #success-leader .card-body .card-text p {
+  margin-bottom: 0.5rem;
+}
 section#produk .tab-pane {
   text-align: center;
 }
@@ -460,13 +463,14 @@ a.to-top.show {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  transition: 0.5s ease;
 }
 .loading .spinner-grow {
   margin: 0 10px;
   animation-duration: 1s !important;
 }
 .loading.close {
+  transition: 0.5s ease;
+  pointer-events: none;
   opacity: 0;
   z-index: 0;
 }

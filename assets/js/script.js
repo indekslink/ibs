@@ -78,7 +78,7 @@ $("#produk .owl-carousel, #gallery .owl-carousel").owlCarousel({
   dots: false,
   responsive: {
     0: {
-      items: 1,
+      items: 2,
     },
     569: {
       items: 2,
@@ -91,7 +91,23 @@ $("#produk .owl-carousel, #gallery .owl-carousel").owlCarousel({
     },
   },
 });
-$("#content-testimoni .owl-carousel").owlCarousel({
+$("#content-testimoni #manfaat-produk .owl-carousel").owlCarousel({
+  stagePadding: 20,
+  margin: 10,
+  dots: false,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    569: {
+      items: 2,
+    },
+    767: {
+      items: 3,
+    },
+  },
+});
+$("#content-testimoni #success-leader .owl-carousel").owlCarousel({
   stagePadding: 20,
   margin: 10,
   dots: false,
@@ -99,10 +115,11 @@ $("#content-testimoni .owl-carousel").owlCarousel({
     0: {
       items: 1,
     },
-    569: {
+
+    767: {
       items: 2,
     },
-    767: {
+    1024: {
       items: 3,
     },
   },
