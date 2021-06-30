@@ -144,3 +144,13 @@ function register() {
     "https://api.whatsapp.com/send?phone=6282333888499&text=Silahkan%20isi%20form%20tersebut:%0A%0ANama%20:%20%0AEmail%20:%20%0ANo.Telepon%20:%20";
   window.open(url, "_blank");
 }
+
+// const loadingItems = document.querySelectorAll(".loading .spinner-grow");
+// loadingItems.forEach((loading, i) => {
+//   setInterval(() => {
+//     loading
+//   }, (i + 1) * 50);
+// });
+$(window).on("load", function () {
+  $(".loading").addClass("close");
+});

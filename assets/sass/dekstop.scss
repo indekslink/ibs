@@ -529,3 +529,28 @@ a.to-top {
     }
   }
 }
+
+// loading
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: 0.5s ease;
+  .spinner-grow {
+    margin: 0 10px;
+
+    animation-duration: 1s !important;
+  }
+  &.close {
+    opacity: 0;
+    z-index: 0;
+  }
+}
